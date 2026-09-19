@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cognifyz - JavaScript Task 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cognifyz</h1>
+        <p class="subtitle">Where Data Meets Intelligence</p>
+
+        <h2>JavaScript Task 2</h2>
+
+        <!-- Task 1: Button Color Change -->
+        <section class="card">
+            <h3>1. Button Color Changer</h3>
+
+            <button id="colorButton" onclick="changeColor()">
+                Click Me
+            </button>
+        </section>
+
+
+        <!-- Task 2: Greeting -->
+        <section class="card">
+            <h3>2. Time-Based Greeting</h3>
+
+            <button onclick="showGreeting()">
+                Show Greeting
+            </button>
+        </section>
+
+
+        <!-- Task 3: Calculator -->
+        <section class="card">
+            <h3>3. Addition Calculator</h3>
+
+            <input
+                type="number"
+                id="number1"
+                placeholder="Enter first number"
+            >
+
+            <input
+                type="number"
+                id="number2"
+                placeholder="Enter second number"
+            >
+
+            <button onclick="addNumbers()">
+                Add Numbers
+            </button>
+
+            <p id="result">Result: -</p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

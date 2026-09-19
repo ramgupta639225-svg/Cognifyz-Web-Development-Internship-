@@ -1,0 +1,301 @@
+/* =========================
+   Basic Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+header {
+    background-color: #111;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+
+/* Hamburger Button */
+
+.menu-btn {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #f1f5f9;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #007bff;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   General Sections
+========================= */
+
+.section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.card {
+    padding: 30px;
+
+    border-radius: 10px;
+
+    background: #f5f5f5;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px;
+}
+
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+
+        padding: 0 20px;
+    }
+
+
+    /* Show hamburger */
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    /* Hide navigation by default */
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #111;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 0;
+    }
+
+
+    /* Show navigation when active */
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+
+        padding: 15px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* Cards */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+}
