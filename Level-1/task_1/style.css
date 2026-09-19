@@ -1,0 +1,76 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f6f8;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Main heading */
+h1 {
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px;
+}
+
+/* Image */
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/* Form */
+form {
+    margin: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Submit button */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
